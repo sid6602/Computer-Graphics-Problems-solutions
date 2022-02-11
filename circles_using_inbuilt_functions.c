@@ -1,3 +1,7 @@
+/* 
+Write a c++ program to display concentric circles
+*/
+
 #include<stdio.h>
 #include<graphics.h>
 #include<conio.h>
