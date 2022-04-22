@@ -106,3 +106,45 @@ int main(){
         break;
       
       
+case 4:
+        printf("\nEnter starting co-ordinates:");
+    scanf("%d%d",&x1,&y1);
+    printf("\nEnter ending co-ordinates:");
+    scanf("%d%d",&x2,&y2);
+        dx=x2-x1;
+        dy=y2-y1;
+        if(abs(dx)>=abs(dy)){
+                len=abs(dx);
+            }else{
+                len=abs(dy);
+            }
+            
+            xk= dx/len;
+            yk= dy/len;
+        for( i=0; i<len;i++){
+            if(i%10==0 ){
+                if(i%10==1){
+                    if(i%10==2){}
+                }
+            }else{
+                putpixel(x1,y1,WHITE);
+            }
+            // delay(50);
+            x1=x1+xk;
+            y1=y1+yk;
+        }
+        break;
+        
+        case 5:
+            exit(0);
+        break;
+        default:
+        printf("Please enter default choise");
+    }
+    }
+   
+    
+ getch();
+    closegraph();
+    return 0;
+}
